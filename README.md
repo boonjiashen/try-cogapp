@@ -16,7 +16,7 @@ You should see:
 cog......................................................................Passed
 ```
 
-# Example CLI
+## Example CLI
 
 
 <!-- [[[cog
