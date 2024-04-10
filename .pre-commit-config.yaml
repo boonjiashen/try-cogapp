@@ -4,8 +4,8 @@ repos:
       - id: coggify
         name: cog
         additional_dependencies:
-          - "cogapp>=3.4.1"
-          - "requests>=2.31.0"
-        entry: python -m cogapp -r
+          - "cogapp"
+        entry: python -m cogapp -r @.cog-file-list.txt
         language: python
-        files: '.+\.md'
+        # Make pre-commit not pass filenames to `entry` since the filenames are managed by .cog-file-list.txt
+        pass_filenames: false

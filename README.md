@@ -22,10 +22,10 @@ cog......................................................................Passed
 <!-- [[[cog
 import cog
 import argparse
-import src.try_cogapp.main
+import src.try_cogapp.argparser
 
 HELP_WIDTH = 80
-parser = src.try_cogapp.main.create_parser()
+parser = src.try_cogapp.argparser.create_parser()
 formatter = lambda prog: argparse.RawTextHelpFormatter(prog, width=HELP_WIDTH)
 parser.formatter_class = formatter
 help_msg = parser.format_help().strip()

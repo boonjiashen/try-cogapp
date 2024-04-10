@@ -22,4 +22,4 @@ distribution = true
 
 [tool.pdm.scripts]
 cli = "python -m src.try_cogapp"
-cog = "python -m cogapp -r README.md"
+cog = "python -m cogapp -r @.cog-file-list.txt"
