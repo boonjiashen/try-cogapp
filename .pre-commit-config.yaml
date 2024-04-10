@@ -3,5 +3,6 @@ repos:
     hooks:
       - id: cog-lint
         name: cog
-        entry: pdm run python -m cogapp -r README.md
+        entry: pdm run python -m cogapp -r
         language: system
+        files: '.+\.md$'
