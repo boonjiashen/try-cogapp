@@ -37,10 +37,10 @@ cog.out(f"""
 ]]] -->
 
 ```
-usage: My CLI [-h] [--path PATH]
+usage: URL-getter [-h] [--url URL]
 
 options:
-  -h, --help   show this help message and exit
-  --path PATH  A useful path
+  -h, --help  show this help message and exit
+  --url URL   URL to get
 ```
 <!-- [[[end]]] -->

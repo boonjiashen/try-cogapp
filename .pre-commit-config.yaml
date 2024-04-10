@@ -1,8 +1,11 @@
 repos:
   - repo: local
     hooks:
-      - id: cog-lint
+      - id: coggify
         name: cog
-        entry: pdm run python -m cogapp -r
-        language: system
-        files: '.+\.md$'
+        additional_dependencies:
+          - "cogapp>=3.4.1"
+          - "requests>=2.31.0"
+        entry: python -m cogapp -r
+        language: python
+        files: '.+\.md'
