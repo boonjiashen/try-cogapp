@@ -7,6 +7,7 @@ authors = [
 ]
 dependencies = [
     "cogapp>=3.4.1",
+    "requests>=2.31.0",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
@@ -20,4 +21,5 @@ build-backend = "pdm.backend"
 distribution = true
 
 [tool.pdm.scripts]
+cli = "python -m src.try_cogapp"
 cog = "python -m cogapp -r README.md"
